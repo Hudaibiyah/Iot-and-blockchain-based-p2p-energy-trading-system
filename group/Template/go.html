@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            text-align: center;
+        }
+        body {
+            background-image: url("C:\Users\syedh\Downloads\pic1.jpg");
+        }
+        button {
+            display: inline-block;
+            background-color: #9acadf;
+            border-radius: 10px;
+            border: 4px double #cccccc;
+            color: #ffffff;
+            font-display: black;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+          }
+        button span {
+            cursor: pointer;
+        } 
+        .btn-center{
+            position:static;
+            left:50%;
+            right:100%;
+        }
+    </style>
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity=
+"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body style="background-color: rgb(82, 200, 172)" style="background-image: url('C:\Users\syedh\Downloads\pic1.jpg')">
+    <h1>Welcome to Urja</h1>
+    <button type="button">
+        <a href="{% url 'urja' %}">Go to Urja!</a>
+    
+    </button>
+    
+    <button type = "button1">
+        <a href = "{% url 'about_us' %}">About Us</a>
+        
+    </button>
+    <div class="btn-center"></div>
+
+</body>
+</html>
