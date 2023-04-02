@@ -1,18 +1,114 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+  </head>
+  <body style="background-color: rgb(33, 144, 241)">
+    <h3>Welcome {user.username}</h3>
+    <button type="button">Buy</button>
+    <button type="button1">Sell</button>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Data</title>
-</head>
-<body style = "background-color: rgb(33, 144, 241);">
-    <h3>Welcome {{user.username}}</h3>
-    <button type = button>
-        Buy
-    </button>
-    <button type = button1>
-        Sell
-    </button>
-</body>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    body {
+      background-image: url("./images/img2.png");
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 10vw;
+    }
+
+    #btn1 {
+      text-transform: uppercase;
+      background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+      border-radius: 30px;
+      border: 1px solid #cbcbcb;
+      cursor: pointer;
+      color: #5e97d1;
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 12px 20px;
+      margin: 10px;
+      text-decoration: none;
+      box-shadow: 1px 4px 12px rgba(94, 28, 68, 0.15);
+      text-shadow: 0px 1px 0px #cbcbcb;
+      padding-inline: 50px;
+    }
+    #btn1 a {
+      text-decoration: none;
+    }
+    #btn2 a {
+      text-decoration: none;
+    }
+    #btn2 {
+      text-transform: uppercase;
+      background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+      border-radius: 30px;
+      border: 1px solid #cbcbcb;
+      cursor: pointer;
+      color: #5e97d1;
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 12px 20px;
+      margin: 10px;
+      text-decoration: none;
+      box-shadow: 1px 4px 12px rgba(94, 28, 68, 0.15);
+      text-shadow: 0px 1px 0px #cbcbcb;
+      padding-inline: 50px;
+    }
+    button span {
+      cursor: pointer;
+    }
+    .btn-center {
+      position: static;
+      left: 50%;
+      right: 100%;
+    }
+    .btn:hover {
+      box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+      transform: scale(1.1);
+      transition: 0.2s ease-in-out;
+    }
+    .container {
+      width: fit-content;
+      display: flex;
+      position: relative;
+      top: 60%;
+      left: 35%;
+      margin: auto;
+    }
+  </style>
+  <head>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <button type="btn1" id="btn1">
+        <a href="./register.html">Buy</a>
+      </button>
+
+      <button type="btn2" id="btn2">
+        <a href="./log_in.html">Sell</a>
+      </button>
+    </div>
+  </body>
 </html>
